@@ -1,0 +1,7 @@
+#!/bin/bash
+# resgrep - Search in resource XML files
+# Usage: resgrep "search_pattern"
+
+for dir in $(find . -name res -type d); do 
+    find "$dir" -type f -name '*.xml' -print0 | xargs -0 grep --color -n "$@"
+done

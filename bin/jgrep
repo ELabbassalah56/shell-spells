@@ -1,0 +1,5 @@
+#!/bin/bash
+# jgrep - Search in Java source files
+# Usage: jgrep "search_pattern"
+
+find . -type f -name "*.java" -print0 | xargs -0 grep --color -n "$@"

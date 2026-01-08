@@ -1,0 +1,5 @@
+#!/bin/bash
+# treegrep - Search in all common source file types
+# Usage: treegrep "search_pattern"
+
+find . -type f \( -name "*.c" -o -name "*.h" -o -name "*.cpp" -o -name "*.hpp" -o -name "*.S" -o -name "*.java" -o -name "*.xml" \) -print0 | xargs -0 grep --color -n -i "$@"

@@ -1,0 +1,5 @@
+#!/bin/bash
+# mgrep - Search in Makefile and build configuration files
+# Usage: mgrep "search_pattern"
+
+find . -type f \( -name "Makefile" -o -name "Makefile.*" -o -name "*.make" -o -name "*.mak" -o -name "*.mk" \) -print0 | xargs -0 grep --color -n "$@"

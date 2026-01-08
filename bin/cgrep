@@ -1,0 +1,5 @@
+#!/bin/bash
+# cgrep - Search in C/C++ source files
+# Usage: cgrep "search_pattern"
+
+find . -type f \( -name "*.c" -o -name "*.cpp" -o -name "*.cc" -o -name "*.cxx" -o -name "*.h" -o -name "*.hpp" -o -name "*.hh" \) -print0 | xargs -0 grep --color -n "$@"
