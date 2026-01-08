@@ -1,11 +1,11 @@
-# AOSP Grep Tools - Complete Package
+# shell-spells - Complete Package
 
 A complete set of AOSP-style grep commands for efficient code searching in your projects. These commands replicate the functionality of the Android Open Source Project's specialized grep tools.
 
 ## 📦 Package Contents
 
 ```
-aosp-grep-tools/
+shell-spells/
 ├── README.md                 # This file
 ├── quick_install.sh          # Automated installation script
 ├── bin/                      # Executable scripts
@@ -15,8 +15,6 @@ aosp-grep-tools/
 │   ├── mgrep                 # Makefile search
 │   └── treegrep              # All source types search
 ├── docs/                     # Documentation
-│   ├── README_SETUP.md       # Quick setup guide
-│   ├── INSTALLATION_GUIDE.md # Detailed installation methods
 │   └── aosp_grep_guide.md    # Command reference
 └── examples/                 # Usage examples
     └── EXAMPLES.md           # Real-world usage scenarios
@@ -191,4 +189,4 @@ These scripts are based on the Android Open Source Project's build system utilit
 
 **Version:** 1.0  
 **Last Updated:** January 2026  
-**Maintainer:** Your Team
+**Maintainer:** esalah
